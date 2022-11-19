@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <style>
+            
+            body{
+                background-image:url('https://source.unsplash.com/1600x900/?" +{{.Header}} + "');
+                background-repeat: no-repeat;
+
+            }
+            div {
+            background-color: rgba(8, 8, 8, 0.815);
+            width: 1800px;
+            opacity: 1;
+            background-position: 1000px 1000px;
+            font-size:60px
+
+}
+            .box-1 {
+                background-image:url({{.Icon}});
+                
+                background-repeat: no-repeat;
+                font-size:50px;
+                font-family: "Sofia", sans-serif ;
+                 color:rgb(255, 255, 255); 
+            }  
+            .button {
+            display: inline-block;
+            border: 2px solid #fff;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+            }
+            .button:hover {
+            background: #fff;
+            color: #000;
+            }
+            .div1{
+                background-color: rgba(8, 8, 8, 0.815);
+                width: 1200px;
+                opacity: 1;
+                font-size:60px;
+                font-family: "Sofia", sans-serif ;
+                 color:rgb(255, 255, 255); 
+            }
+            #map {
+            height: 100%;
+      }                
+        </style>
+    </head>
+    <body>
+          
+        <input type="text" id="city">
+        <button type="button"id = "submit"class="button">search</button>
+        <div id="numberOne" class="box-1"></div><br><br>
+        <div id="numberTwo" class="div1"></div>
+        
+    </body>
+    <script src="./main.js" defer></script>
+    </html>
