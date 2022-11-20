@@ -12,9 +12,9 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + city +"&units=metr
     console.log(l.list);
     let i = 0;
     const hourP = l.list.map(user => {
-        if(i < 1) {
+        if(i == 0) {
             i+=1;
-            return '<img src="https://openweathermap.org/img/wn/'+ user.weather[0].icon + '@2x.png"/>   '+city+ '\t'+ user.main.temp + '<span>&#8451;</span>'  + '</div>'+'<br><br>'
+            return '<img src="https://openweathermap.org/img/wn/'+ user.weather[0].icon + '@2x.png"/>&nbsp&nbsp'+city+'&nbsp&nbsp&nbspHumidity ' +user.main.humidity+'<br>'+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+ user.main.temp + '<span>&#8451;</span>'  + '</div>'+'<br><br>'
         }
     }).join("")
     document.getElementById('numberOne').innerHTML=hourP;
