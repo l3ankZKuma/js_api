@@ -7,7 +7,7 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + city +"&units=metr
         alert("BUG");
     }
     return response.json();
-})
+})//for each
 .then(l => {
     console.log(l.list);
     let i = 0;
